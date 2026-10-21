@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#101015">
+  <title>BROKEN DESTINIES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game">
+    <section id="titleScreen" class="screen">
+      <div class="title-logo">BROKEN<br>DESTINIES</div>
+      <p class="chapter-label">ГЛАВА 1 — «КОМПРОМАТ»</p>
+      <button id="startBtn">НОВАЯ ИГРА</button>
+      <button id="continueBtn">ПРОДОЛЖИТЬ</button>
+      <p class="small">История о выборах и их последствиях</p>
+    </section>
+
+    <section id="storyScreen" class="screen hidden">
+      <div id="scene" class="scene">
+        <div id="sceneName">ПЕРЕУЛОК</div>
+        <div id="characters"></div>
+        <div id="qteTimer" class="hidden"></div>
+      </div>
+
+      <div id="dialogueBox">
+        <div id="speaker"></div>
+        <div id="dialogue"></div>
+        <div id="choices"></div>
+        <button id="nextBtn">ДАЛЬШЕ ▶</button>
+      </div>
+
+      <div id="topButtons">
+        <button id="saveBtn" aria-label="Сохранить">СОХРАНИТЬ</button>
+        <button id="menuBtn" aria-label="Меню">МЕНЮ</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
